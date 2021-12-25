@@ -7,9 +7,7 @@ var fs = require('fs')
 var response = { id: 0, msg: "", statusCode: 0 }
 
 route.post('/upload_post', upload.single('post_image'),async (req,res)=>{
-
     try{
-        
             let postData = mdb_user_post()
             postData.uid = req.body.uid
             postData.description = req.body.description
