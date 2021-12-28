@@ -22,7 +22,7 @@ route.post('/post_like', async (req,res)=>{
             postLikeData.userId = req.body.userId
 
             let newLikeData = postLikeData.save()
-            response.id = newLikeData._id
+            response.id = postLikeData.id
             response.msg = "post liked"
             response.statusCode = 200
             res.json(response)

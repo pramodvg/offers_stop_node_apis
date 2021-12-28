@@ -1,9 +1,10 @@
+const { ObjectId } = require('mongodb')
 const mongoose = require('mongoose')
 const schema = mongoose.Schema
 
 const upload_post_schema = new schema(
     {
-        uid: String,
+        uid: ObjectId,
         description: String,
         post_image: {
             data: Buffer,

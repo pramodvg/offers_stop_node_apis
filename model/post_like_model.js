@@ -1,10 +1,11 @@
+const { ObjectId } = require('mongodb')
 const mongoose = require('mongoose')
 const schema = mongoose.Schema
 
 const post_like_schema = new schema(
     {
-        postId: String,
-        userId: String
+        postId: ObjectId,
+        userId: ObjectId
     }
 )
 
