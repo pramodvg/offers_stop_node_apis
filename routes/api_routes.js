@@ -10,5 +10,4 @@ router.use(postApi)
 router.use(post_like)
 router.use(user_comment)
 
-
 module.exports = router

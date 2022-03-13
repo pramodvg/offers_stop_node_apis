@@ -16,7 +16,7 @@ route.post('/post_like', async (req,res)=>{
                     response.statusCode = 200;
                 res.json(response)
             });
-            
+        
         } else {
             postLikeData.postId = req.body.postId
             postLikeData.userId = req.body.userId
