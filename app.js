@@ -10,7 +10,7 @@ app.use(cors());
 app.use(logger('dev'));
 
 // view engine setup
-app.set('views', path.join(__dirname, 'View'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(cookieParser());
