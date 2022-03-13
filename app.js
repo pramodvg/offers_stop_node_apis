@@ -9,6 +9,10 @@ var app = express();
 app.use(cors());
 app.use(logger('dev'));
 
+// view engine setup
+app.set('views', path.join(__dirname, 'View'));
+app.set('view engine', 'hbs');
+
 app.use(cookieParser());
 //this will put body data that's json format into req.body
 app.use(express.json());
